@@ -1,0 +1,69 @@
+{
+    "layer": "top",
+	"position": "bottom",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["custom/prev", "custom/play", "custom/next"],
+    "modules-right": ["network", "battery", "clock", "custom/whitespace", "custom/power"],
+"sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+        "1": "󰇧",
+        "2": "󰆉",
+        "3": "󰫔",
+        "4": "󰉨",
+        "5": "󰆍",
+        "6": "󰇰",
+        "urgent": "",
+        "default": ""
+    }
+},
+
+
+	"pulseaudio": {
+        "format": "🔊",
+		"on-click": "pavucontrol"
+	},
+	"network": {
+		"format-wifi": "󰤨",
+		"format-disconnected": "Disconnected",
+        "on-click": "nm-connection-editor"
+	},
+    "battery": {
+        "format": "{icon}",
+        "format-icons": ["󰂃", "󰁹", "󰁾", "󰂁", "󰁹"],
+        "on-click": "echo asd > dunstify -r '991030' 'Capacity:' a{capacity}"
+
+    },
+
+    "custom/power": {
+    "format": "  ",
+    "on-click": "wlogout",
+    "tooltip": false
+},
+
+    "clock": {
+        "format": "{:%a %d %b %H:%M}"
+    },
+
+    "custom/whitespace": {
+        "format": " "
+    },
+    "custom/prev":{ 
+        "format": " ",
+        "on-click" : "playerctl --player=spotify previous",
+        "tooltip": false
+        },
+    "custom/play":{ 
+        "format": "  ",
+        "on-click" : "playerctl --player=spotify play-pause",
+        "tooltip": false
+        },
+
+    "custom/next":{ 
+        "format": " ",
+        "on-click" : "playerctl --player=spotify next",
+        "tooltip": false
+        }
+}
