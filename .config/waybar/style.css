@@ -1,0 +1,153 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "OverpassMono";
+    font-size: 30px;
+    min-height: 0px;
+}
+
+#waybar {
+    background: transparent;
+    color: white;
+}
+
+
+#window {
+    font-weight: bold;
+    font-family: "OverpassMono";
+}
+
+#workspaces button {
+    padding: 5 6px;
+
+}
+
+
+#workspaces button:nth-child(1) {
+
+    color: rgb(0, 102, 255);
+}
+
+#workspaces button:nth-child(2) {
+
+
+    color: magenta;
+}
+#workspaces button:nth-child(3) {
+
+
+    color: rgb(8, 252, 0);
+}
+
+#workspaces button:nth-child(4) {
+
+    color: brown;
+}
+
+#workspaces button:nth-child(5) {
+
+    color: white;
+}
+
+#workspaces button:nth-child(6) {
+
+    color: gold;
+}
+
+
+#clock, #battery, #cpu, #memory, #network, #pulseaudio, #tray, #mode {
+    padding: 6px;
+    font-weight: bold;
+    background: #26354b;
+}
+
+#battery {
+    font-size: 15px;
+    color: greenyellow;
+    
+}
+
+
+
+#battery.charging {
+    color: gold
+}
+
+#battery.status {
+    font-size: 1px;
+    color: white;
+    
+}
+#custom-play{
+    font-family: "Material Design Icons";
+    font-size: 40px;
+    background-color: rgba(58, 58, 58, 0.904);
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#clock
+{
+    
+    font-size: 14px;
+    background: #26354b;
+    border-radius: 0px 25px 25px 0px;
+
+}
+
+#network {
+border-right: none;
+    font-size: 15px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+#network.disconnected {
+    color: red;
+    border-radius: 25px 0px 0px 25px;
+}
+
+
+#idle_inhibitor{
+    color:red;
+    font-size: 30px;
+}
+#tray {
+    background: #26354b;
+    border-radius: 0px 25px 25px 0px;
+    
+}
+
+#custom-prev{
+    background-color: rgba(58, 58, 58, 0.904);
+    border-right: none;
+
+    border-radius: 25px 0px 0px 25px;
+}
+
+#custom-next{
+    background-color: rgba(58, 58, 58, 0.904);
+    border-radius: 0px 25px 25px 0px;
+}
+
+#custom-power{
+    font-size: 26px;
+    font-family: "Material Design Icons Desktop";
+    background-color: red;
+    border-radius: 50px;
+}
+
+
