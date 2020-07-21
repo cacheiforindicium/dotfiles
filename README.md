@@ -2,7 +2,7 @@
 SwayWM dotfiles
 
 Dependencies:
-Sway, Waybar, Wlogout, brightnessctl
+Sway, Waybar, Wlogout, brightnessctl, swaylock
 
 Fonts:
 OverpassMono, Material Design Icons
